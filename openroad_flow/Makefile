@@ -45,7 +45,8 @@
 # DESIGN_CONFIG=./designs/sky130hd/jpeg/config.mk
 # DESIGN_CONFIG=./designs/sky130hd/microwatt/config.mk
 # DESIGN_CONFIG=./designs/sky130hd/riscv32i/config.mk
-DESIGN_CONFIG=./designs/sky130hd/registered_adder/config.mk
+#DESIGN_CONFIG=./designs/sky130hd/registered_adder/config.mk
+DESIGN_CONFIG=./designs/sky130hd/adder64_pipelined/config.mk
 
 # DESIGN_CONFIG=./designs/sky130hs/aes/config.mk
 # DESIGN_CONFIG=./designs/sky130hs/gcd/config.mk

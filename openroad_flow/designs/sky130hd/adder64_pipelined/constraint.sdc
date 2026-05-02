@@ -1,4 +1,4 @@
-current_design registered_adder
+current_design adder64_pipelined
 
 set clk_name core_clock
 set clk_port_name clk

@@ -36,8 +36,8 @@ module registered_adder #(
     input  wire [WIDTH-1:0]  b,
     input  wire              cin,
     output reg  [WIDTH-1:0]  sum,
-    output reg               cout,
-    output wire [WIDTH:0]    result // for probing
+    output reg               cout
+//    output wire [WIDTH:0]    result // for probing
 );
 
     // -------------------------------------------------------
