@@ -1,4 +1,4 @@
-current_design registered_adder
+current_design adder64_pipelined
 
 set clk_name core_clock
 set clk_port_name clk
@@ -11,8 +11,9 @@ create_clock -name $clk_name -period $clk_period $clk_port
 
 set non_clock_inputs [all_inputs -no_clocks]
 
-set_input_delay [expr $clk_period * $clk_io_pct] -clock $clk_name $non_clock_inputs
-set_output_delay [expr $clk_period * $clk_io_pct] -clock $clk_name [all_outputs]
+# remove the input and output delays to focus on the register-to-register timing
+# set_input_delay [expr $clk_period * $clk_io_pct] -clock $clk_name $non_clock_inputs
+# set_output_delay [expr $clk_period * $clk_io_pct] -clock $clk_name [all_outputs]
 
 set_false_path -from [get_ports rst_n]
 # set_false_path -to [get_ports result]

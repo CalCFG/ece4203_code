@@ -1,7 +1,7 @@
-export DESIGN_NAME = registered_adder
+export DESIGN_NAME = adder64_pipelined
 export PLATFORM    = sky130hd
 
-export VERILOG_FILES = $(DESIGN_HOME)/src/$(DESIGN_NICKNAME)/registered_adder.v
+export VERILOG_FILES = $(DESIGN_HOME)/src/$(DESIGN_NICKNAME)/adder64_pipelined.v
 export SDC_FILE      = $(DESIGN_HOME)/$(PLATFORM)/$(DESIGN_NICKNAME)/constraint.sdc
 
 # Adders degrade GCD
